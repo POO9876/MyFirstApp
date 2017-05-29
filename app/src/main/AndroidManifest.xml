@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.picon.agbsn">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT" android:value="DISABLE" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Search2017"
+            android:parentActivityName=".Search2017" />
+        <activity
+            android:name=".Search2016"
+            android:parentActivityName=".Search2016" />
+        <activity
+            android:name=".ProfileActivity16"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FullDisplay16"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChogariyaActivity"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Home"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PanditList"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".PoojaList"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".HotelList"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".ProfileActivity17"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FullDisplay17"
+            android:parentActivityName=".RefreshActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".KundaliActivity"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".GeetActivity"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".NotificationActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AboutUs"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Feedback"
+            android:parentActivityName=".Home" />
+        <activity android:name=".PayMentGateWay" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".BankDetail"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".RefreshActivity"
+            android:parentActivityName=".RefreshActivity"/>
+    </application>
+
+</manifest>

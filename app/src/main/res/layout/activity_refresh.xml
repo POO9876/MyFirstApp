@@ -1,0 +1,89 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:background="#f2f2f2"
+        android:layout_marginTop="10dp"
+        android:id="@+id/upper"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+           <RadioGroup
+               android:gravity="center_vertical"
+               android:layout_weight="0.5"
+               android:id="@+id/gender"
+               android:orientation="horizontal"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content">
+
+            <RadioButton
+                android:checked="true"
+                android:text="male"
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="female"
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+           </RadioGroup>
+
+
+
+        <Button
+            android:padding="2dp"
+            android:onClick="searchRefresh"
+            android:layout_weight="0.3"
+            android:layout_width="0dp"
+            android:text="Search"
+            android:layout_marginRight="15dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:background="#f1f1f1"
+        android:layout_below="@+id/upper"
+        android:id="@+id/candicate"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:text="Detail Of Candidate"
+        android:gravity="center"
+        android:textSize="15dip"
+        android:textColor="#394b5c"
+        android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/candicate"
+            android:id="@+id/lower"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView">
+
+    </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+        </LinearLayout>
+
+</RelativeLayout>

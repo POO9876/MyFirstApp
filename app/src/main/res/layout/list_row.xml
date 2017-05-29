@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#e2e2e2"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:visibility="gone"
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id"
+            android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/fathername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/dop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/manglik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/caste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/mobile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="id"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/marital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enNumber"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/enNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enNumber"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+   <LinearLayout
+       android:background="#ffffff"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+       <ImageView
+           android:id="@id/profile"
+           android:layout_gravity="center_vertical"
+           android:layout_width="100dp"
+           android:src="@mipmap/ic_launcher"
+           android:layout_height="100dp" />
+
+
+
+       <TableLayout
+           android:padding="10dp"
+           android:shrinkColumns="*"
+           android:stretchColumns="*"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="Name : ">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/name"
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="CANARA BANK"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="Education : ">
+               </TextView>
+
+               <TextView
+                   android:id="@+id/education"
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="CANARA BANK"/>
+           </TableRow>
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="Age :">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/age"
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="CANARA BANK"/>
+
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="Mobile">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/mobile1"
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="CANARA BANK"/>
+           </TableRow>
+
+           <TableRow
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:textColor="@color/colorPrimary"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="Occupation : ">
+
+               </TextView>
+
+               <TextView
+                   android:id="@+id/occupations"
+                   android:padding="5dp"
+                   android:textSize="15sp"
+                   android:layout_height="match_parent"
+                   android:layout_width="wrap_content"
+                   android:text="CANARA BANK"/>
+           </TableRow>
+
+       </TableLayout>
+
+
+   </LinearLayout>
+
+
+</LinearLayout>

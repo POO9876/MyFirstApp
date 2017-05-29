@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:background="#9b3090"
+            android:padding="3dp"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:text="Registration Form"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:background="@drawable/bg"
+            android:layout_margin="10dp"
+            android:weightSum="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:onClick="selectImage"
+                android:id="@+id/profile"
+                android:scaleType="fitCenter"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:layout_width="130dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="130dp" />
+
+            <TextView
+                android:id="@+id/enterno"
+                android:layout_weight="0.5"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="Click on Image to upload "
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:id="@+id/fullname"
+            android:drawableLeft="@drawable/ic_male"
+            android:background="@drawable/bg"
+            android:inputType="textPersonName"
+            android:hint="Enter Full Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:padding="5dp"
+            android:layout_margin="10dp"
+            android:id="@+id/fathername"
+            android:drawableLeft="@drawable/ic_male"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg"
+            android:inputType="textPersonName"
+            android:hint="Enter Father/Mother Name"
+            android:layout_width="match_parent"/>
+<LinearLayout
+    android:background="@drawable/bg"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_gender"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:text="Gender :"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/male"
+                    android:textSize="10sp"
+                    android:drawableLeft="@drawable/ic_male"
+                    android:layout_width="wrap_content"
+                    android:text="Male"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:textSize="10sp"
+                    android:id="@+id/female"
+                    android:drawableLeft="@drawable/ic_female"
+                    android:layout_width="wrap_content"
+                    android:text="female"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+</LinearLayout>
+    <TextView
+        android:layout_margin="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:text="Marital status :"
+        android:drawableLeft="@drawable/ic_person"
+        android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_margin="10dp"
+            style="@style/spinner_style"
+            android:id="@+id/marital_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:text="Full Address :"
+            android:drawableLeft="@drawable/ic_location"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:singleLine="true"
+            android:layout_margin="10dp"
+            android:id="@+id/fulladdress"
+            android:inputType="textPersonName"
+            android:lines="3"
+            android:minLines="3"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:background="@drawable/bg"
+            android:textAlignment="center"
+            android:hint="type address here "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/cities"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/state"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:background="@drawable/bg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:drawableLeft="@drawable/ic_manglik"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:text="Manglik :"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:id="@+id/manglik"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/no"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:text="No"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:text="Yes"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:text="Birth Detail :"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:layout_margin="10dp"
+                    android:onClick="birthDate"
+                    android:id="@+id/bdate"
+                    android:drawableLeft="@drawable/ic_calender"
+                    android:background="@drawable/bg"
+                    android:inputType="date"
+                    android:ems="10"
+                    android:hint="Birth Date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_margin="10dp"
+                    android:onClick="birthTime"
+                    android:id="@+id/btime"
+                    android:drawableLeft="@drawable/ic_time"
+                    android:background="@drawable/bg"
+                    android:inputType="time"
+                    android:ems="10"
+                    android:hint="Birth Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:layout_margin="10dp"
+                    android:drawableLeft="@drawable/ic_location"
+                    android:background="@drawable/bg"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/bplace"
+                    android:hint="Birth Palace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:text="Mobile :"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:layout_margin="10dp"
+                    android:id="@+id/m1"
+                    android:drawableLeft="@drawable/ic_phone1"
+                    android:background="@drawable/bg"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:hint="First Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:layout_margin="10dp"
+                    android:id="@+id/m2"
+                    android:drawableLeft="@drawable/ic_phone2"
+                    android:background="@drawable/bg"
+                    android:inputType="phone"
+                    android:ems="10"
+                    android:hint="Second Mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_education"
+            android:layout_width="match_parent"
+            android:text="Education :"
+            android:layout_height="wrap_content"/>
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/education"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/othereducation"
+            android:background="@drawable/bg"
+            android:inputType="textPersonName"
+            android:lines="3"
+            android:singleLine="true"
+            android:minLines="3"
+            android:maxLines="3"
+            android:scrollbars="vertical"
+            android:hint="If education others(optional)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_profession"
+            android:layout_width="match_parent"
+            android:text="Occupation :"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/occupation"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/height"
+            android:background="@drawable/bg"
+            android:drawableLeft="@drawable/ic_edit"
+            android:inputType="numberDecimal"
+            android:hint="Enter Height"
+            android:layout_width="match_parent"
+             android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:layout_margin="10dp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:drawableLeft="@drawable/ic_caste"
+                android:layout_width="match_parent"
+                android:text="subcast :"
+                android:layout_height="wrap_content" />
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/cast"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_card"
+            android:layout_width="match_parent"
+            android:text="Id Proof Detail :"
+            android:layout_height="wrap_content" />
+
+
+        <Spinner
+            android:layout_margin="10dp"
+            android:id="@+id/idproof"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/idnumber"
+            android:background="@drawable/bg"
+            android:drawableLeft="@drawable/ic_edit"
+            android:inputType="text"
+            android:hint="Enter Number of ID proof"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:onClick="registerForm"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:text="Register"
+            android:textColor="#fff"
+            android:layout_margin="10dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+</ScrollView>

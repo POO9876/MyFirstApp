@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#e2e2e2"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:text="Bank Detail Of AGBSN"
+            android:gravity="center"
+            android:textSize="20dip"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content"/>
+
+
+    <TableLayout
+        android:padding="20dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:text="Bank name : ">
+
+        </TextView>
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="CANARA BANK">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Branch name : ">
+
+            </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="AIRPORT ROAD INDORE">
+
+            </TextView>
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="A/C. number :">
+
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="5272101001223">
+
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="A/C. Holder :">
+
+            </TextView>
+
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="ADYA GAUD BRAHMIN SEWA NYAS">
+
+            </TextView>
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="IFSC code : ">
+
+            </TextView>
+
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="CNRB0005272">
+
+            </TextView>
+
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="Amount : ">
+
+            </TextView>
+
+            <TextView
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:text="₹ 200.00">
+
+            </TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

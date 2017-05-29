@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#a32306</color>
+    <color name="colorPrimaryDark">#e5f1f1f1</color>
+    <color name="colorAccent">#870103</color>
+    <color name="backfround">#f7ffbc</color>
+    <color name="white">#ffffff</color>
+<color name="black">#000000</color>
+    <color name="kundali">#8f0009</color>
+<color name="bg_gradient_start">#EB5038</color>
+<color name="bg_gradient_end">#CA3822</color>
+<color name="bg_button_login">#fff4e2</color>
+    <color name="button_pressed">#140463</color>
+    <color name="button_focused">#5b0357</color>
+    <color name="button_default">#a32306</color>
+    <string-array name="movie_serial_bg">
+        <item>#24c6d5</item>
+        <item>#57dd86</item>
+        <item>#ad7dcf</item>
+        <item>#ff484d</item>
+        <item>#fcba59</item>
+        <item>#24c6d5</item>
+        <item>#add283</item>
+        <item>#b13099</item>
+        <item>#e5ccf7</item>
+        <item>#fdcdce</item>
+        <item>#ffdca9</item>
+        <item>#fff9cc</item>
+    </string-array>
+</resources>

@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical"
+    android:id="@+id/navigation"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:background="@drawable/backforkun"
+    android:id="@+id/activity_kundali"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="6">
+
+
+    <LinearLayout
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <TextView
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:text="कुंडली मिलान"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="35dp"
+        android:layout_height="0dp" />
+</LinearLayout>
+<LinearLayout
+android:layout_weight="1"
+android:orientation="vertical"
+android:layout_width="match_parent"
+android:layout_height="0dp">
+
+
+   <TextView
+       android:textSize="18sp"
+       android:layout_margin="5dp"
+       android:layout_gravity="center"
+       android:gravity="center"
+       android:layout_width="wrap_content"
+       android:text="वधू के लिए राशि चुने"
+       android:layout_height="wrap_content" />
+
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/vadhu"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+    <TextView
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:text="वधू के लिए नक्षत्रा चुने"
+        android:layout_height="wrap_content" />
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/vadhunakshatra"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+        <TextView
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:text="वर के लिए राशि चुने"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/var"
+        android:layout_width="150dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+
+
+        <TextView
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:text="वर के लिए नक्षत्रा चुने"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11" />
+
+    <Spinner
+        style="@style/spinner_style"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/varnakshatra"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+    <Button
+        android:textColor="#fff"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="25dp"
+        android:onClick="matchKundali"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:text="मिलान प्रारंभ करे"
+        android:textAllCaps="false"
+        android:layout_height="35dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="30dp"
+        android:background="#f3ffd504"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:text="कुंडली दोष"
+        android:textColor="@color/kundali"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+    <View
+        android:background="#f3ffd504"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp" />
+
+
+    <LinearLayout
+         android:layout_marginTop="10dp"
+        android:weightSum="1"
+         android:layout_marginBottom="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+
+         <TextView
+             android:gravity="center"
+             android:layout_gravity="center"
+             android:layout_weight="0.5"
+             android:textSize="20sp"
+             android:layout_width="0dip"
+             android:text="दोष"
+             android:textColor="@color/kundali"
+             android:layout_height="wrap_content" />
+
+         <TextView
+             android:textSize="20sp"
+             android:layout_gravity="center"
+             android:layout_weight="0.5"
+             android:layout_width="0dip"
+             android:gravity="center"
+             android:text="अंक"
+             android:textColor="@color/kundali"
+             android:layout_height="wrap_content" />
+
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="नाड़ी दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="गण दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="षडाष्टक दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="6"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="नवं पन्च्म दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="5"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="द्विद्वादश दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="योनी दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:weightSum="1"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:textSize="15sp"
+            android:layout_width="0dip"
+            android:text="नूटूर दोष"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="0dip"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/kundali"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+    </ScrollView>

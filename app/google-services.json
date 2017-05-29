@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "907638564856",
+    "firebase_url": "https://agbsn17.firebaseio.com",
+    "project_id": "agbsn17",
+    "storage_bucket": "agbsn17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907638564856:android:e81782b55b1a6ba1",
+        "android_client_info": {
+          "package_name": "com.picon.agbsn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907638564856-dcag1l2839fu971v2s0123m97k5e5e7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAqzthHlcvKQ_X8i2b06AN7cfyfQWRNJM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

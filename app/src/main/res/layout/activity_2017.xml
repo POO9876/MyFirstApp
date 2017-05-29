@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:gravity="center"
+    android:padding="5.0dip"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:background="#f3ffd504"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:text="Search 2017 !!!"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/agb"
+            android:layout_height="200dip" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text=".................."
+            android:gravity="center"
+            android:textSize="25sp"
+            android:scrollHorizontally="true"
+            android:id="@+id/textViewServer"
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:background="#f3ffd504"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+        <EditText
+            android:id="@+id/enterno"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter entry number"
+            android:ems="10"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:id="@+id/gender"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip">
+
+            <TextView
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="female" />
+
+        </RadioGroup>
+
+
+        <CheckBox
+            android:id="@+id/asearch"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Advance Search" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/aLayout"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+            <EditText
+                android:id="@+id/ame"
+                android:layout_gravity="center"
+                android:background="@drawable/bg"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter name (optional)"
+                android:inputType="text" />
+
+
+            <RadioGroup
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/mangal"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip">
+
+                <TextView
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Manglik" />
+
+                <RadioButton android:id="@+id/yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yes" />
+
+                <RadioButton
+                    android:id="@+id/no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="no" />
+
+                <RadioButton
+                    android:id="@+id/both"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="both" />
+            </RadioGroup>
+
+            <Spinner
+                android:layout_gravity="center"
+                android:id="@+id/marital_status"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                style="@style/spinner_style" />
+
+            <Spinner
+                android:layout_gravity="center"
+                android:id="@+id/education"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                style="@style/spinner_style" />
+
+            <Spinner
+                android:layout_gravity="center"
+                android:id="@+id/occupation"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                style="@style/spinner_style" />
+
+
+            <Spinner
+                android:id="@+id/state"
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                style="@style/spinner_style" />
+
+            <Spinner
+                android:layout_gravity="center"
+                android:id="@+id/cities"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                style="@style/spinner_style" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:onClick="searchRecord"
+            android:textColor="#ffffffff"
+            android:background="@color/colorPrimary"
+            android:layout_width="300dp"
+            android:layout_height="35.0dip"
+            android:layout_marginTop="10.0dip"
+            android:text="Search" />
+    </LinearLayout>
+</ScrollView>

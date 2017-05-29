@@ -1,0 +1,128 @@
+<LinearLayout
+    android:background="#f7eaeaea"
+    android:orientation="vertical"
+    android:weightSum="3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+                  <ImageView
+                      android:onClick="openChoudhadiya"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="0.5"
+                      android:layout_height="70dp"
+                      android:layout_width="0dp"
+                      android:padding="5dp"
+                      android:src="@drawable/ic_chaughadiya"/>
+
+
+                    <ImageView
+                        android:onClick="openKundali"
+                        android:padding="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.5"
+                        android:layout_height="70dp"
+                        android:layout_width="0dp"
+                        android:src="@drawable/ic_kundali_milaan"/>
+
+                </LinearLayout>
+
+    <View
+        android:background="#fe6e0202"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:onClick="openGeet"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:layout_height="70dp"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_geet"/>
+
+
+        <ImageView
+            android:onClick="openPoojan"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:layout_height="70dp"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_poojan_samgri"/>
+
+    </LinearLayout>
+    <View
+        android:background="#fe6e0202"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="2dp" />
+    <LinearLayout
+        android:weightSum="1"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:padding="5dp"
+            android:onClick="openPandit"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:layout_height="70dp"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_pandit"/>
+
+
+        <ImageView
+            android:onClick="searchHotel"
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:layout_height="70dp"
+            android:layout_width="0dp"
+            android:src="@drawable/ic_hotel"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
