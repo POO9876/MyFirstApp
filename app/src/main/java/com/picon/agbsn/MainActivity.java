@@ -235,6 +235,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(i);
 
         }
+        else if (id == R.id.nav_message) {
+
+            Intent i = new Intent(this,MessageActivity.class);
+            startActivity(i);
+
+        }
         else if (id == R.id.nav_share) {
 
             sharePost();
@@ -276,7 +282,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void disp5(View view)
     {
-        final  String item[]= {"2016","2017","Quick Search"};
+        final  String item[]= {"2016","2017","2018","Quick Search"};
 
         AlertDialog ad = new AlertDialog.Builder(this)
                 .setTitle("-卐- Select year -卐-")
@@ -295,15 +301,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                          case 1:
                              Intent iii = new Intent(MainActivity.this,Search2017.class);
                              startActivity(iii);
-
                              break;
 
                          case 2:
-
-                             Intent iiii = new Intent(MainActivity.this,RefreshActivity.class);
+                             Intent iiii = new Intent(MainActivity.this,Search2017.class);
                              startActivity(iiii);
+                             break;
 
-
+                         case 3:
+                             Intent iiiii = new Intent(MainActivity.this,RefreshActivity.class);
+                             startActivity(iiiii);
                              break;
 
                      }

@@ -1,6 +1,6 @@
 <?php 
-$ToEmail = 'youremail@site.com'; 
-$EmailSubject = 'Site contact form'; 
+$ToEmail = 'info@agbsnbrahminparichay.com/';
+$EmailSubject = 'Site Feeback form';
 $mailheader = "From: ".$_POST["email"]."\r\n"; 
 $mailheader .= "Reply-To: ".$_POST["email"]."\r\n"; 
 $mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n"; 

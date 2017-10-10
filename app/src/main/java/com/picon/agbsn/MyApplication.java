@@ -87,6 +87,7 @@ public class MyApplication extends Application {
                 Log.i("OneSignalExample", "Button pressed with id: " + result.action.actionID);
             Log.i("OneSignalExample", "Message: " + result.notification.payload.title);
             Log.i("OneSignalExample", "content: " + result.notification.payload.body);
+            Log.i("OneSignalExample", "Big picture: " + result.notification.payload.bigPicture);
 
             String title = result.notification.payload.title;
             String content = result.notification.payload.body;

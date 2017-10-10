@@ -280,7 +280,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                                                                                 Bitmap image = ((BitmapDrawable) profile.getDrawable()).getBitmap();
-                                                                               dialog.show();
+                                                                                dialog.show();
                                                                                 ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
                                                                                 image.compress(Bitmap.CompressFormat.JPEG, 40, byteArrayOutputStream);
 

@@ -71,10 +71,11 @@ public class NotificationActivity extends AppCompatActivity {
                 Log.v("long clicked", "pos: " + (pos+Integer.parseInt("1")));
 
 
-                //message_data.remove(pos); //where pos is position of item I click
-                TextView tv = (TextView) arg1.findViewById(R.id.id);
-                int idd = Integer.parseInt(tv.getText().toString());
-                db.Delete_Contact(idd);
+           message_data.remove(pos); //where pos is position of item I click
+                TextView tv  = (TextView)arg1.findViewById(R.id.notification_id);
+                int g = Integer.parseInt(tv.getText().toString());
+                Log.v("textview ", "pos: " + id+" postion"+pos);
+               db.Delete_Contact(g);
                 Toast.makeText(NotificationActivity.this, "Message deleted", Toast.LENGTH_SHORT).show();
                 cAdapter.notifyDataSetChanged();
                 return true;
@@ -108,6 +109,7 @@ public class NotificationActivity extends AppCompatActivity {
 
                 row = inflater.inflate(layoutResourceId, parent, false);
                 holder = new UserHolder();
+                holder.id = (TextView) row.findViewById(R.id.notification_id);
                 holder.title = (TextView) row.findViewById(R.id.user_name_txt);
                 holder.message = (TextView) row.findViewById(R.id.user_email_txt);
                 holder.time = (TextView) row.findViewById(R.id.user_mob_txt);
@@ -116,6 +118,7 @@ public class NotificationActivity extends AppCompatActivity {
                 holder = (UserHolder) row.getTag();
             }
             user = data.get(position);
+            holder.id.setText(String.valueOf(user.get_id()));
             holder.title.setText(user.get_title());
             holder.message.setText(user.get_message());
             holder.time.setText(user.get_time());
@@ -128,6 +131,7 @@ public class NotificationActivity extends AppCompatActivity {
             TextView title;
             TextView message;
             TextView time;
+            TextView id;
         }
 
     }

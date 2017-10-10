@@ -11,6 +11,11 @@
             android:id="@+id/nav_bank"
             android:icon="@drawable/ic_bank"
             android:title="Bank Detail" />
+
+        <item
+            android:id="@+id/nav_message"
+           android:icon="@drawable/ic_mail_black_24dp"
+            android:title="Message" />
     </group>
 
     <item android:title="Communicate">
